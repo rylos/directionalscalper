@@ -5,7 +5,7 @@ cd /opt/directionalscalper
 num_python_processes=$(ps aux | grep "[b]ot.py" -c)
 
 # Numero desiderato dei bot (bots number)
-bots_num=12
+bots_num=1
 
 # Verifica se il numero di processi Python è inferiore a quello desiderato
 if [ $num_python_processes -lt $bots_num ]; then

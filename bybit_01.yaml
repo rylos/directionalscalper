@@ -1,0 +1,42 @@
+session_name: bybit_01
+windows:
+- window_name: bybit_01_normal_0
+  layout: tiled
+  shell_command_before:
+    - cd /opt/directionalscalper-rylos
+  panes:
+    - shell_command:
+      - python3.11 bot.py --exchange bybit --symbol AKROUSDT --strategy bybit_auto_hedge_maker --config config.json --lm n --sm n
+    - shell_command:
+      - python3.11 bot.py --exchange bybit --symbol INJUSDT --strategy bybit_auto_hedge_maker --config config.json --lm gs --sm n
+    - shell_command:
+      - python3.11 bot.py --exchange bybit --symbol MAVUSDT --strategy bybit_auto_hedge_maker --config config.json --lm n --sm n
+    - shell_command:
+      - python3.11 bot.py --exchange bybit --symbol TRBUSDT --strategy bybit_auto_hedge_maker --config config.json --lm n --sm n
+    - shell_command:
+      - python3.11 bot.py --exchange bybit --symbol TUSDT --strategy bybit_auto_hedge_maker --config config.json --lm n --sm n
+    - shell_command:
+      - python3.11 bot.py --exchange bybit --symbol UMAUSDT --strategy bybit_auto_hedge_maker --config config.json --lm n --sm n
+    - shell_command:
+      - python3.11 bot.py --exchange bybit --symbol UNFIUSDT --strategy bybit_auto_hedge_maker --config config.json --lm n --sm n
+    - shell_command:
+      - python3.11 bot.py --exchange bybit --symbol VETUSDT --strategy bybit_auto_hedge_maker --config config.json --lm n --sm n
+    - shell_command:
+      - python3.11 bot.py --exchange bybit --symbol WOOUSDT --strategy bybit_auto_hedge_maker --config config.json --lm gs --sm n
+    - shell_command:
+      - python3.11 bot.py --exchange bybit --symbol XLMUSDT --strategy bybit_auto_hedge_maker --config config.json --lm n --sm n
+    - shell_command:
+      - python3.11 bot.py --exchange bybit --symbol YGGUSDT --strategy bybit_auto_hedge_maker --config config.json --lm n --sm n
+- window_name: bybit_01_gs_0
+  layout: tiled
+  shell_command_before:
+    - cd /opt/directionalscalper-rylos
+  panes:
+    - shell_command:
+      - python3.11 bot.py --exchange bybit --symbol COMPUSDT --strategy bybit_auto_hedge_maker --config config.json --lm gs --sm gs
+    - shell_command:
+      - python3.11 bot.py --exchange bybit --symbol LQTYUSDT --strategy bybit_auto_hedge_maker --config config.json --lm gs --sm gs
+    - shell_command:
+      - python3.11 bot.py --exchange bybit --symbol SSVUSDT --strategy bybit_auto_hedge_maker --config config.json --lm gs --sm gs
+    - shell_command:
+      - python3.11 bot.py --exchange bybit --symbol WLDUSDT --strategy bybit_auto_hedge_maker --config config.json --lm gs --sm gs

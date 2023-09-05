@@ -3,7 +3,7 @@
 # Nome della sessione Tmuxp da verificare (tmux session name)
 session_name="bybit"
 # Imposta la working directory
-cd /opt/directionalscalper
+cd /opt/directionalscalper-rylos
 
 # Verifica se la sessione Tmuxp esiste e la killa se vero
 if tmux has-session -t $session_name 2>/dev/null; then
